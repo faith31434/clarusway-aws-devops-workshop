@@ -36,8 +36,6 @@ def init_bookstore_db():
     VALUES
         ("Where the Crawdads Sing", "Delia Owens", 1 ),
         ("The Vanishing Half: A Novel", "Brit Bennett", 0),
-        ("Where the Crawdads Sing", "Ali İpek", 1 ),
-        ("Phoneix Project:", "Gene Kim", 1),
         ("1st Case", "James Patterson, Chris Tebbetts", 0);
     """
     cursor.execute(drop_table)
@@ -128,7 +126,7 @@ def remove_book(book):
 # and assign to the static route of ('/')
 @app.route('/')
 def home():
-    return "Welcome to Faith's Bookstore API Service"
+    return "Welcome to Callahan's Bookstore API Service"
 
 # Write a function named `get_books` which returns all books in JSON format for `GET`,
 # and assign to the static route of ('/books')
